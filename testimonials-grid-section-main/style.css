@@ -1,0 +1,243 @@
+/* STYLE GENERAL */
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Fraunces:wght@700&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+body{
+    display:grid;
+    height: 100vh;
+    place-items: center;
+    place-content: center;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr;
+    background-color:hsl(210, 46%, 95%) ;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.contener{
+    width: 980px;
+    height: 500px;
+    display: grid;
+    grid-template-columns:235px 235px 235px;
+    grid-template-rows:240px 240px;
+    grid-gap: 15px;
+    position: relative;
+}
+h1{
+    font-size: 14px;
+}
+h2{
+    font-size: 20px;
+}
+main .png{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+main .item{
+    border-radius: 10px;
+    padding: 15px;
+}
+.parag1{
+    font-size: 10px;
+}
+.parag3{
+    font-size: 12px;
+    
+   color: hsl(0, 0%, 81%);
+}
+
+.parag2{
+    position: relative;
+    font-weight: bold;
+    /* color: hsl(210, 46%, 95%); */
+    font-size: 16px;
+    z-index: 9999999;
+}
+.name{
+    margin: 0 20px;
+ }
+
+                         /* STYLE DANIEL */
+main .Daniel{
+    position: relative;
+    grid-area: 1/1/2/3;
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-color:hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-rows:repeat(3, min-content);
+    grid-template-columns:min-content 1fr;
+}
+main .Daniel .description{
+    grid-column: span 2;
+    margin-top: 20Px;
+}
+main .Daniel .description .parag3{
+    margin: 15px 0;
+}
+                            /* STYLE JONATHAN */
+
+main .Jonathan{
+    grid-area: 1/3/2/4;
+    background-color:hsl(217, 19%, 35%) ;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns:min-content 1fr;
+    grid-template-rows:repeat(3, min-content);
+
+}
+main .Jonathan .description{
+    grid-column: span 2;
+    margin-top: 10Px;
+}
+main .Jonathan .description .parag3{
+    margin: 15px 0;
+    line-height: 1.4;
+
+}
+                              /* STYLE JEANETTE */
+main .Jeanette{
+    grid-area: 2/1/3/2;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns:min-content 1fr ;
+    grid-template-rows:repeat(3, min-content);
+}
+main .Jeanette .description{
+    grid-column: span 2;
+    margin-top: 20Px;
+}
+main .Jeanette .description .parag3{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+                        /* STYLE PATRICK */
+main .Patrick{
+    grid-area: 2/2/3/4;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-rows:repeat(3, min-content);
+    grid-template-columns:min-content 1fr ;
+}
+main .Patrick .description{
+    grid-column: span 2;
+    margin-top: 20Px;
+}
+main .Patrick .description .parag3{
+    margin: 15px 0;
+}
+                        /* STYLE KIRA */
+main .kira{
+    grid-area: 1/4/3/5;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-rows:repeat(3, min-content);
+    grid-template-columns:min-content 1fr ;
+}
+main .kira .description{
+    grid-column: span 2;
+    margin-top: 20Px;
+}
+main .kira .description .parag3{
+    margin:16px 0;
+    line-height: 1.5;
+
+}
+
+                    /* style screen of 100px - 601px */
+
+@media (max-width:1000px) and (min-width:601px) {
+    .contener{
+        width: 580px;
+        height: 400px;
+        display: grid;
+        grid-template-columns:150px 150px 150px 150px;
+        grid-template-rows:180px 180px;
+    }
+    h1{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    main .png{
+        width: 25px;
+        height: 26px;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    main .item{
+        border-radius: 10px;
+        padding: 08px;
+    }
+    .parag1{
+        font-size: 08px;
+        top: 10px;
+    }
+    .parag3{
+        font-size: 08px;
+       color: hsl(0, 0%, 81%);
+    }
+    
+    .parag2{
+        position: relative;
+        font-weight: bold;
+        font-size: 10px;
+        z-index: 9999999;
+    }
+    .name{
+        margin: 0 05px;
+     }
+}  
+                            /* style screen of 600px   */
+ @media (max-width:600px) {
+    body{
+        display:grid;
+        grid-template-rows: min-content 15px;
+    }
+    footer{
+        display: none;
+    } 
+    .contener{
+        display: flex;
+        flex: column;
+        flex-wrap: wrap;
+        width: 250px;
+        position: relative;
+    }
+    .name{
+        position: absolute;
+        margin-left: 40px;
+    }
+    main .Daniel{
+        display: flex;
+        flex-direction: column;
+    }
+    main .Jonathan{
+        display: flex;
+        flex-direction: column;
+    }
+    main .Jeanette{
+        display: flex;
+        flex-direction: column;
+    }
+    main .Patrick{
+        display: flex;
+        flex-direction: column;
+    }
+    main .kira{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
